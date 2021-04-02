@@ -5,20 +5,27 @@
     padding: 0;
     margin: 0;
 }
-
-body {
-    font-size: 16px;
+body{
     font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    font-size: 16px;
+    height: 80vh;
+    
     margin: 0;
     display: flex;
+
     justify-content: center;
     background-image: url('https://source.unsplash.com/1600x900/?city,firecrackers');
 }
 
 .main {
-    width: 70vw;
+    width: 50vw;
+
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 12rem;
+    margin-bottom:auto;
     background-color: rgba(250, 235, 215,0.8);
     border-radius: 10px;
     padding: 1rem;
@@ -28,11 +35,12 @@ body {
 .header h1{
     text-transform: capitalize;
     font-size: 3rem;
+    margin-top: 20px;
 }
 .header input{
-    width: 30%;
-    height: 40px;
-    margin:10px auto;
+    width: 50%;
+    height: 50px;
+    margin:15px auto;
     padding:10px;
     background-color: white;
     border:1px solid #f0eeeee7;
@@ -43,7 +51,7 @@ body {
 }
 .header button{
     width: 80px;
-    height:40px;
+    height:50px;
     background-color: white;
     border:1px solid #f0eeeee7;
     border-radius: 5px;
@@ -55,7 +63,7 @@ body {
     border:1px solid rgb(29, 178, 247);
 }
 .countdown {
-    margin-top: 10px;
+    margin-top: 30px;
     height: 100px;
     display:grid;
     grid-template-columns: auto auto auto auto;
@@ -78,5 +86,50 @@ body {
     font-weight: 700;
     visibility: hidden;
 
+}
+footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(16, 2, 66);
+    color: white;
+    font-size: x-large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid rgb(65, 63, 63);
+}
+
+@media screen and (max-width:600px){
+    .main {
+        width: 100%;
+        border:none;
+        border-radius: 0;
+    }
+    .header h1{
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+    .header input{
+        width: 100%;
+        height: 50px;
+        padding:10px;
+        background-color: white;
+        border-radius: 0px;
+        border: none;
+        display: block;
+        font-size: 1rem;
+    }
+    .header button{
+        width: 100%;
+        height:40px;
+        background-color: white;
+        border:1px solid #f0eeeee7;
+        border-radius: 0;
+        font-size: 1rem;;
+    }
+    footer {
+        font-size: 1.4rem;
+        padding:10px;
+    }
 }
 
