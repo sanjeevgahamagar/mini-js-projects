@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Countdown</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="header">
+            <h1 class="title">Countdown till next birthday</h1>
+            <input type="text" name="text" id="text" placeholder="format: 12 Jan 2022" value="">
+            <button type="submit" onclick="submit()">Enter</button>
+        </div>
+    
+        <div class="countdown" id="countdownreal">
+           <div class="countdown-items" id="days">0</div>
+           <div class="countdown-items" id="hours">0</div>
+           <div class="countdown-items" id="minutes">0</div>
+           <div class="countdown-items" id="seconds">0</div>
+           <div class="countdown-items" id="day-str">Days</div>
+           <div class="countdown-items">Hours</div>
+           <div class="countdown-items">Minutes</div>
+           <div class="countdown-items">Seconds</div> 
+        </div>
+        <div id="show-data">
+            <p>Happy Birthday! Today is your birthday!</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
