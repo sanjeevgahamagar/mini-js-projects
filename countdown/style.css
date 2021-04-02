@@ -12,9 +12,49 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    background-image: url('https://source.unsplash.com/1600x900/?city,firecrackers');
 }
 
 .main {
     width: 70vw;
     text-align: center;
+    margin-top: 8rem;
+    background-color: rgba(250, 235, 215,0.8);
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid brown;
+}
+.header h1{
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.header input{
+    width: 30%;
+    height: 40px;
+    margin:10px auto;
+    padding:10px;
+    background-color: white;
+    border:1px solid #f0eeeee7;
+    border-radius: 5px;
+}
+.header input:focus {
+    border:1px solid rgb(29, 178, 247);
+}
+.header button{
+    width: 80px;
+    height:40px;
+    background-color: white;
+    border:1px solid #f0eeeee7;
+    border-radius: 5px;
+}
+.header button:hover{
+    
+    color:white;
+    background-color: rgb(29, 178, 247);
+    border:1px solid rgb(29, 178, 247);
+}
+.countdown {
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
 }
